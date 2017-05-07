@@ -9,7 +9,7 @@
 	$hostname ="mysql.hostinger.es";  //nuestro servidor de BD
 	$database ="u392158408_alum"; //Nombre de nuestra base de datos
 	$username ="u392158408_molin"; //Nombre de usuario de nuestra base de datos 
-	$password ="molina1984";   //Contraseña de nuestra base de datos	
+	$password ="";   //Contraseña de nuestra base de datos	
 
 	// intentar conectar al servidor con el usuario y contraseña anteriores
 	$mysqli = new mysqli($hostname,$username,$password, $database);
