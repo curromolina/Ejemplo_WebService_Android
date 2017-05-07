@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">REST con JSON</string>
+
+    <string name="alumno">Nombre del Alumno</string>
+    <string name="matricula">Número de matrícula</string>
+    <string name="tlf">Teléfono</string>
+    <string name="email">Email</string>
+    <string name="insertar">Insertar</string>
+    <string name="mostrar">Mostrar</string>
+    <string name="action_settings">action settings</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="actualizar">Actualizar</string>
+</resources>
