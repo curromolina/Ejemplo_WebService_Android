@@ -46,7 +46,6 @@ public class MainActivity extends Activity {
 
     // dirección IP o URL del servidor
     //private final static String URL_SERVIDOR ="192.168.0.14"; // comprobar IP local que puede cambiar
-    //private final static String URL_SERVIDOR = "isabelmcg.esy.es"; // hosting en hostinger
     private final static String URL_SERVIDOR = "fmolina.esy.es"; // hosting en hostinger
     // URL del directorio de los scripts php del servidor
     private final static String URL_PHP = "http://" + URL_SERVIDOR + "/rest_con_json/";
@@ -338,7 +337,6 @@ public class MainActivity extends Activity {
         String id = String.valueOf(alumno.getId());
         parametros_POST.add(new BasicNameValuePair("id", id));
 
-
         try {
             // establece la entidad => como una lista de pares URL codificada.
             // Esto suele ser útil al enviar una solicitud HTTP POST
@@ -367,7 +365,7 @@ public class MainActivity extends Activity {
     // Inserta los datos de las Personas en el servidor
     // a través del script => update.php
     // devuelve true => sin la actualización es correcta
-    // devuelve false => si hubo un error en la inserción
+    // devuelve false => si hubo un error en la actualización
     private boolean actualizar() {
         boolean resul = false;
 
@@ -675,7 +673,7 @@ public class MainActivity extends Activity {
     } // fin clase WebService_mostrar
 
 
-    /* Este Web Service permitirá mostrar un alumno de la BD
+    /* Este Web Service permitirá eliminar un alumno de la BD
    */
     class WebService_borrar extends AsyncTask<String, String, String> {
 
@@ -734,7 +732,7 @@ public class MainActivity extends Activity {
     } // fin clase WebService_borrar
 
     /*
-    * Este Web Service permitirá insertar un alumno en la BD
+    * Este Web Service permitirá actualizar un alumno en la BD
 	*/
     class WebService_actualizar extends AsyncTask<String, String, String> {
 
